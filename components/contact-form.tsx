@@ -16,7 +16,7 @@ export function ContactForm() {
 
 
     return (
-        <form action={formAction} className="flex flex-col w-full lg:w-3/5 border rounded-2xl p-8 lg:p-16 backdrop-blur-lg bg-slate-600/30">
+        <form action={formAction} className="flex flex-col w-full lg:w-3/5 rounded-2xl p-8 lg:p-16 backdrop-blur-lg bg-slate-600/30">
             <div className="flex flex-col justify-between gap-y-2 text-xl">
                 <label htmlFor="username">Name</label>
                 <input type="text" required id="username" name="username" className="h-8 text-slate-900" />
