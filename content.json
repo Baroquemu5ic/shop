@@ -1,0 +1,91 @@
+{
+    "navbar": {
+        "logoHeader": "Baroque Music",
+        "navLinks": [
+            {
+                "title": "Services",
+                "href": "/services"
+            },
+            {
+                "title": "Contact",
+                "href": "/contact"
+            },
+            {
+                "title": "About",
+                "href": "/about"
+            },
+            {
+                "title": "Blog",
+                "href": "/blog"
+            }
+        ]
+    },
+    "footer": {
+        "address": "SVS Windgates, 13th Cross Street, Horamavu Agara, Babausapalya near Kalyan Nagar, Bangalore - 560043",
+        "footerLinks": [
+            {
+                "title": "About",
+                "href": "/about"
+            },
+            {
+                "title": "Contact",
+                "href": "/contact"
+            },
+            {
+                "title": "Careers",
+                "href": "/careers"
+            },
+            {
+                "title": "Baroque Music Instagram",
+                "href": "",
+                "isIcon": true
+            }
+        ]
+    },
+    "home": {
+        "header": "Baroque Music",
+        "subtitle": "where your music finds harmony",
+        "introductionHeader": "Our Vision",
+        "introductionText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque harum sint possimus ipsa nihil quisquam non? Quibusdam, deleniti corporis. Et ea aperiam vel voluptatum quia quasi optio saepe, numquam quod.Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque harum sint possimus ipsa nihil quisquam non? Quibusdam, deleniti corporis. Et ea aperiam vel voluptatum quia quasi optio saepe, numquam quod.",
+        "serviceCards": [
+            {
+                "title": "Music Lessons",
+                "href": "/music-lessons",
+                "description": "Some text content that explains the service briefly",
+                "imgUrl": "/images/service-lesson.avif"
+            },
+            {
+                "title": "Music Jams",
+                "href": "/music-jams",
+                "description": "Some text content that explains the service briefly",
+                "imgUrl": "/images/service-jam.avif"
+            }
+        ]
+    },
+    "contact": {
+        "pageHeader": "Contact Us",
+        "form": {
+            "username": {
+                "label": "Name"
+            },
+            "email": {
+                "label": "Email"
+            },
+            "subject": {
+                "label": "Subject"
+            },
+            "usermessage": {
+                "label": "Message"
+            },
+            "submit": {
+                "label": "Submit Message",
+                "label2": "Submitting"
+            }
+        }
+    },
+    "about": {
+        "pageHeader": "About Us",
+        "introductionText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque harum sint possimus ipsa nihil quisquam non? Quibusdam, deleniti corporis. Et ea aperiam vel voluptatum quia quasi optio saepe, numquam quod.Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque harum sint possimus ipsa nihil quisquam non? Quibusdam, deleniti corporis. Et ea aperiam vel voluptatum quia quasi optio saepe, numquam quod.",
+        "subText": " Itaque harum sint possimus ipsa nihil quisquam non? Quibusdam, deleniti corporis. Et ea aperiam vel voluptatum quia quasi optio saepe, numquam quod.Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque harum sint possimus ipsa nihil quisquam non? Quibusdam, deleniti corporis. Et ea aperiam vel voluptatum quia quasi optio saepe, numquam quod."
+    }
+}

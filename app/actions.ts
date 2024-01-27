@@ -1,5 +1,7 @@
 "use server"
 
+import { sendEmail, sendEmailProps } from "@/lib/server/send-email"
+
 
 export async function submitEmailAction(prevState: any, formData: FormData) {
 
@@ -10,7 +12,7 @@ export async function submitEmailAction(prevState: any, formData: FormData) {
         usermessage: formData.get('usermessage')
     }
 
-    const { error } = await sendEmail()
+    const { error } = await sendEmail(formObj as sendEmailProps)
 
     if (error) {
         return {
@@ -28,26 +30,4 @@ export async function submitEmailAction(prevState: any, formData: FormData) {
     }
 }
 
-
-/**
- * use resend API & dump data into Supabase
- */
-
-async function sendEmail() {
-    try {
-        const response = await fetch('https://fakestoreapi.com/products')
-
- 
-        if(!response.ok) {
-            throw new Error(response.statusText)
-        }
-        
-        return {}
-
-    } catch (err: any) {
-        return {
-            error: err
-        }
-    }
-}
 

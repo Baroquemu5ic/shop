@@ -4,6 +4,8 @@ import Link from "next/link"
 import React from "react"
 import CloseIcon from "./icons/close"
 
+import ContentJson from "@/content.json"
+
 export function MobileNavMenu() {
     const [open, setOpen] = React.useState(false)
 
@@ -40,10 +42,15 @@ function MobileNavMenuLinks({ onClose } : MobileNavMenuProps) {
             <CloseIcon className="opacity-85 cursor-pointer hover:opacity-100" width={32} height={32} color="white" onClick={onClose} />
 
             <nav className="mt-[24px] flex-col space-y-4 flex absolute left-0 right-0 w-full h-screen backdrop-blur-lg bg-slate-700/80 text-slate-50 py-4">
-                <MobileNavLink title="Services" href="/services" />
-                <MobileNavLink title="Contact" href="/contact" />
-                <MobileNavLink title="About" href="/about" />
-                <MobileNavLink title="Blog" href="/blog" />
+            {ContentJson.navbar.navLinks.map((navLink) => {
+                    return (
+                        <MobileNavLink
+                            key={`mob-navlink-${navLink.href}`}
+                            title={navLink.title}
+                            href={navLink.href}
+                        />
+                    )
+                })}
             </nav>
         </div>
     )

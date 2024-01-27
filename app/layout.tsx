@@ -1,9 +1,11 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
+import { Analytics } from '@vercel/analytics/react';
 import "./globals.css";
 import { cn } from "../lib/utils";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
+import { Toaster } from "sonner";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -36,7 +38,11 @@ export default function RootLayout({
         
         <main className="flex flex-col w-full z-10">
           {children}
+
+          <Analytics />
         </main>
+
+        <Toaster richColors />
 
         <Footer />
       </body>
