@@ -4,7 +4,7 @@ import ContentJson from "@/content.json";
 
 import { cn } from "@/lib/utils";
 
-export function Location({ className }: { className: string }) {
+export function Location({ className }: { className?: string }) {
   return (
     <a
       className="text-[#DE7F11] flex flex-col md:flex-row items-center text-center opacity-80 group"
