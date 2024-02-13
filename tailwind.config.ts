@@ -7,5 +7,14 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   plugins: [],
+  theme: {
+    extend: {
+      colors: {
+        "brand-orange": "#DE7F11",
+        "brand-blue": "#004AAD",
+        "brand-neutral": "#F4F7FA",
+      },
+    },
+  },
 };
 export default config;
