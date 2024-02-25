@@ -11,14 +11,15 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title:
-    "Baroque Music Home | Lessons, Jams in Babusapalya, Kalyan Nagar, Banagalore",
+    "Baroque Academy of Performing Arts & Production | Babusapalya, Kalyan Nagar, Banagalore",
   description:
-    "Baroque Music - a place for music lessons, jams for kids, adults in Babusapalya, Kalyan Nagar, Banagalore ",
+    "Baroque Academy of Performing Arts & Production in Babusapalya, Kalyan Nagar, Banagalore ",
   keywords: [
     "music lessons bangalore",
+    "music production",
     "kids lessons bangalore",
     "music instruments bangalore",
-    "music jams bangalore",
+    "performing arts bangalore",
   ],
 };
 

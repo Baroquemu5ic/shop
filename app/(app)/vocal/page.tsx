@@ -1,25 +1,26 @@
-import { ContactForm } from "@/components/contact-form";
 import Image from "next/image";
-import ContactJson from "@/content.json";
+import ContentJson from "@/content.json";
 
-export default function ContactUsPage() {
+export default function VocalPage() {
   return (
     <div className="flex w-full pt-[120px]">
       <div className="flex flex-col items-center py-12 px-8 lg:py-16 lg:px-12 text-slate-100 space-y-12 w-full min-h-screen">
         <h2 className="text-4xl text-slate-200">
-          {ContactJson.contact.pageHeader}
+          {ContentJson.home.serviceCards[1].title}
         </h2>
 
         <Image
-          src="/images/contact.avif"
-          alt="Contact Us"
+          src={ContentJson.home.serviceCards[1].imgUrl}
+          alt={ContentJson.home.serviceCards[1].title}
           className=""
           width={450}
           height={200}
           priority
         />
 
-        <ContactForm />
+        <p className="text-xl my-4 mx-8 lg:mx-12">
+          {ContentJson.home.serviceCards[1].description}
+        </p>
       </div>
     </div>
   );

@@ -19,9 +19,15 @@ export function Location({ className }: { className?: string }) {
         color="#DE7F11"
         className="animate-pulse"
       />
-      <span className={cn("tracking-tight font-bold ml-px", className)}>
-        {ContentJson.footer.address}
-      </span>
+      <p
+        className={cn(
+          "tracking-tight font-bold ml-px flex flex-col items-start",
+          className
+        )}
+      >
+        <span>{ContentJson.footer.address[0]}</span>
+        <span>{ContentJson.footer.address[1]}</span>
+      </p>
     </a>
   );
 }
