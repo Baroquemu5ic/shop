@@ -79,7 +79,10 @@
   },
   "about": {
     "pageHeader": "About Us",
-    "introductionText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque harum sint possimus ipsa nihil quisquam non? Quibusdam, deleniti corporis. Et ea aperiam vel voluptatum quia quasi optio saepe, numquam quod.Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque harum sint possimus ipsa nihil quisquam non? Quibusdam, deleniti corporis. Et ea aperiam vel voluptatum quia quasi optio saepe, numquam quod.",
-    "subText": " Itaque harum sint possimus ipsa nihil quisquam non? Quibusdam, deleniti corporis. Et ea aperiam vel voluptatum quia quasi optio saepe, numquam quod.Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque harum sint possimus ipsa nihil quisquam non? Quibusdam, deleniti corporis. Et ea aperiam vel voluptatum quia quasi optio saepe, numquam quod."
+    "introductionText": [
+      "At Baroque Music, we redefine music education with our comprehensive training program.",
+      "Alongside mastering instruments like Keyboard, Guitar, Drums, and Vocal, we provide vital instruction in Digital Audio Workstations (DAWs) such as Ableton Live and essential plugins.",
+      "Our approach ensures that aspiring musicians not only excel in traditional instrument proficiency and vocal technique but also become adept in leveraging technology to create, produce, and innovate. By seamlessly integrating traditional musical training with modern production techniques, we empower our students to become versatile and complete musicians ready to succeed in today's dynamic music industry landscape."
+    ]
   }
 }

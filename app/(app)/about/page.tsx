@@ -9,13 +9,16 @@ export default function AboutPage() {
           {ContentJson.about.pageHeader}
         </h2>
 
-        <p className="text-xl my-4 mx-8 lg:mx-12">
-          {ContentJson.about.introductionText}
-        </p>
-
-        <p className="text-xl my-4 mx-8 lg:mx-12">
-          {ContentJson.about.subText}
-        </p>
+        {ContentJson.home.introductionText.map((introTextFragment, idx) => {
+          return (
+            <p
+              className="text-xl my-4 text-center mx-4 lg:mx-12"
+              key={`intro-text-frag-${idx}`}
+            >
+              {introTextFragment}
+            </p>
+          );
+        })}
 
         <div className="flex flex-col space-y-4 mx-8 lg:mx-12 w-4/5 md:w-3/5 h-[300px] md:h-[500px]">
           <h3 className="text-lg text-center">Visit Us!</h3>
