@@ -1,27 +1,30 @@
 import Link from "next/link";
 
 import BaroqueLogo from "../icons/logo";
-import PhoneIcon from "../icons/phone";
-import WhatsAppIcon from "../icons/whatsapp";
 
 import { MobileNavMenu } from "./mobile-nav-menu";
 
 import ContentJson from "@/content.json";
 import SocialMediaIcons from "./social-media";
 import { MusicIcon } from "../music-icon";
+import { ContactBanner } from "../contact-banner";
 
 export function Navbar() {
   return (
     <header className="z-50 fixed top-0 left-0 right-0 py-6 px-6 md:px-12 flex flex-col gap-4 bg-gray-900/80 shadow backdrop-blur-lg hover:bg-gray-900/60 hover:ease-in">
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center z-40">
         <Link
           href="/"
           className="flex items-center hover:opacity-80 ease-in group"
           title={ContentJson.navbar.logoHeader}
         >
-          <BaroqueLogo width={50} height={50} className="-ml-[10px]" />
+          <BaroqueLogo
+            width={50}
+            height={50}
+            className="-ml-[10px] flex-shrink-0"
+          />
 
-          <div className="text-2xl text-[#DE7F11] font-extrabold xl:self-end">
+          <div className="text-2xl text-[#DE7F11] font-extrabold xl:self-end pr-8 lg:pr-0">
             {ContentJson.navbar.logoHeader}
           </div>
         </Link>
@@ -45,11 +48,7 @@ export function Navbar() {
         </div>
       </div>
 
-      <p className="w-full flex pl-[35px] lg:pl-[40px] gap-2 items-center text-xl font-light text-white group">
-        <PhoneIcon width={24} height={24} className="animate-pulse" />
-        <WhatsAppIcon width={24} height={24} className="animate-pulse" />
-        <span>+91 888 464 8080</span>
-      </p>
+      <ContactBanner />
     </header>
   );
 }
