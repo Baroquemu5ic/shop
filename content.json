@@ -84,5 +84,46 @@
       "Alongside mastering instruments like Keyboard, Guitar, Drums, and Vocal, we provide vital instruction in Digital Audio Workstations (DAWs) such as Ableton Live and essential plugins.",
       "Our approach ensures that aspiring musicians not only excel in traditional instrument proficiency and vocal technique but also become adept in leveraging technology to create, produce, and innovate. By seamlessly integrating traditional musical training with modern production techniques, we empower our students to become versatile and complete musicians ready to succeed in today's dynamic music industry landscape."
     ]
+  },
+  "courses": {
+    "pageHeader": "Courses",
+    "list": [
+      {
+        "id": "music-instrument",
+        "title": "Music Instrument",
+        "highlights": [
+          "Foundation in Music Theory",
+          "Guitar: Chords, Scales, Techniques, Fingerpicking, Strumming Patterns, Lead Guitar Concepts, learn Hindi and English songs.",
+          "Keyboard: Harmony, Improvisation, Scale and Chord Construction, Ensemble Playing, Keyboard Technology and Sound Design.",
+          "Drum Programming: Rhythms, Patterns, Sequencing",
+          "Performance and Composition Workshops",
+          "Integration of Music Theory with Instrument Practice"
+        ]
+      },
+      {
+        "id": "vocal",
+        "title": "Vocal",
+        "highlights": [
+          "Vocal Technique and Music Theory",
+          "Breathing and Voice Control Exercises",
+          "Pitch Training and Ear Training",
+          "Repertoire Development across Genres",
+          "Performance Skills and Stage Presence",
+          "Collaboration with Instrumentalists and Producers"
+        ]
+      },
+      {
+        "id": "music-production",
+        "title": "Music Production",
+        "highlights": [
+          "Music Theory and Sound Fundamentals",
+          "Digital Audio Workstations (DAW) Training",
+          "Recording Techniques: Microphones, Mixers, Interfaces",
+          "Mixing and Mastering: EQ, Dynamics, Effects",
+          "Music Arrangement and Production Projects",
+          "Industry-Standard Software Tools and Practices"
+        ]
+      }
+    ]
   }
 }

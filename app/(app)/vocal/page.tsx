@@ -21,6 +21,27 @@ export default function VocalPage() {
         <p className="text-xl my-4 mx-8 lg:mx-12">
           {ContentJson.home.serviceCards[1].description}
         </p>
+
+        <p className="text-xl my-4 mx-8 lg:mx-12">
+          {ContentJson.home.serviceCards[1].description}
+        </p>
+
+        <h2 className="text-xl uppercase underline underline-offset-8 decoration-brand-orange">
+          Courses in Vocal
+        </h2>
+
+        <div className="mt-[60px] flex flex-col">
+          {ContentJson.courses.list[1].highlights.map((highlight, index) => {
+            return (
+              <p
+                key={`highlight-${index}`}
+                className="text-lg lg:text-xl my-4 mx-8 lg:mx-12"
+              >
+                {highlight}
+              </p>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
