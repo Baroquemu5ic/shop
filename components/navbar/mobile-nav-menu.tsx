@@ -24,25 +24,26 @@ export function MobileNavMenu() {
             <CloseIcon width={24} height={24} />
           </Drawer.Close>
 
-          <div className="flex flex-col justify-between gap-8 pr-8">
-            <div className="flex flex-col">
-              {ContentJson.navbar.navLinks.map((navLink) => {
-                return (
-                  <MobileNavLink
-                    key={`mob-navlink-${navLink.href}`}
-                    title={navLink.title}
-                    href={navLink.href}
-                  />
-                );
-              })}
+          <div className="flex flex-col justify-between h-[85vh]">
+            <div className="flex flex-col justify-end gap-8 pr-8">
+              <div className="flex flex-col">
+                {ContentJson.navbar.navLinks.map((navLink) => {
+                  return (
+                    <MobileNavLink
+                      key={`mob-navlink-${navLink.href}`}
+                      title={navLink.title}
+                      href={navLink.href}
+                    />
+                  );
+                })}
+              </div>
+
+              <SocialMediaIcons className="" />
             </div>
 
-            <ContactBanner className="justify-end" />
-
-            <SocialMediaIcons />
-
-            <div className="flex justify-end">
-              <Location className="text-xs" />
+            <div className="flex flex-col items-center mt-8 gap-4">
+              <ContactBanner className="justify-center" />
+              <Location className="text-xs justify-center" />
             </div>
           </div>
         </Drawer.Content>

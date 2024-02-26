@@ -21,7 +21,7 @@ export function Location({ className }: { className?: string }) {
       />
       <p
         className={cn(
-          "tracking-tight font-bold ml-px flex flex-col items-start",
+          "tracking-tight font-bold ml-px flex flex-col lg:items-start",
           className
         )}
       >

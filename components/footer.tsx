@@ -7,7 +7,7 @@ export function Footer() {
         <Location />
 
         <div className="flex items-center space-x-4 text-slate-400 mt-4 lg:mt-0">
-          <p>
+          <p className="text-center">
             &copy; Copyright Baroque Academy of Performing Arts & Production
           </p>
         </div>
