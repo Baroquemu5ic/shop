@@ -48,7 +48,7 @@ function IntroSection() {
       {ContentJSON.home.introductionText.map((introTextFragment, idx) => {
         return (
           <p
-            className="text-xl my-4 text-center mx-4 lg:mx-12"
+            className="text-xl my-4 text-center lg:mx-12"
             key={`intro-text-frag-${idx}`}
           >
             {introTextFragment}

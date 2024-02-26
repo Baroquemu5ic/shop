@@ -42,7 +42,7 @@ export function MobileNavMenu() {
             </div>
 
             <div className="flex flex-col items-center mt-8 gap-4">
-              <ContactBanner className="justify-center" />
+              <ContactBanner className="justify-center pl-0" />
               <Location className="text-xs justify-center" />
             </div>
           </div>
