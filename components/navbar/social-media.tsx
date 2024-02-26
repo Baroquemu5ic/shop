@@ -4,7 +4,7 @@ import InstagramIcon from "../icons/svg/InstagramIcon.svg";
 import { cn } from "@/lib/utils";
 
 interface SocialMediaIconsProps {
-  className: string;
+  className?: string;
 }
 
 export default function SocialMediaIcons(props: SocialMediaIconsProps) {
