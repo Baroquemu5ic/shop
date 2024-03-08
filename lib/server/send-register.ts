@@ -16,7 +16,7 @@ export interface sendRegisterProps {
 }
 
 const ADMIN_EMAIL = process.env.ADMIN_EMAIL || "";
-const EMAIL_SUBJECT_PREFIX = "[Baroque Music Customer Email]:";
+const EMAIL_SUBJECT_PREFIX = "[Baroque Music Customer Mail]-REGISTER:";
 
 export async function sendRegister(payload: any) {
   console.log("sendRegister payload \n", payload);
