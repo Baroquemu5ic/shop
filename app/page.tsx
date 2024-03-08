@@ -56,7 +56,7 @@ function IntroSection() {
         );
       })}
 
-      <div className="w-full mt-16 grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <div className="w-full mt-16 grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-8">
         {ServiceCardsData.map((service) => (
           <ServiceCard
             key={service.href}

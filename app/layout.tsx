@@ -38,15 +38,14 @@ export default function RootLayout({
       <body className={cn(inter.className)}>
         <Navbar />
 
-        <main className="flex flex-col w-full z-10">
+        <main className="w-full flex flex-col z-10">
           {children}
-
           <Analytics />
         </main>
 
-        <Toaster richColors />
-
         <Footer />
+
+        <Toaster richColors />
       </body>
     </html>
   );

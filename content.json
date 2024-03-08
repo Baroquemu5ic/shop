@@ -77,6 +77,27 @@
       }
     }
   },
+  "register": {
+    "pageHeader": "Register Now",
+    "form": {
+      "username": {
+        "label": "Name"
+      },
+      "email": {
+        "label": "Email"
+      },
+      "subject": {
+        "label": "Subject"
+      },
+      "usermessage": {
+        "label": "Message"
+      },
+      "submit": {
+        "label": "Submit Message",
+        "label2": "Submitting"
+      }
+    }
+  },
   "about": {
     "pageHeader": "About Us",
     "introductionText": [

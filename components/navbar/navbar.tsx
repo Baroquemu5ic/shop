@@ -6,8 +6,9 @@ import { MobileNavMenu } from "./mobile-nav-menu";
 
 import ContentJson from "@/content.json";
 import SocialMediaIcons from "./social-media";
-import { MusicIcon } from "../music-icon";
+
 import { ContactBanner } from "../contact-banner";
+import { Announcement } from "../announcement";
 
 export function Navbar() {
   return (
@@ -29,19 +30,23 @@ export function Navbar() {
           </div>
         </Link>
 
-        <nav className="hidden text-slate-50 lg:flex items-center justify-end space-x-8 z-50">
-          {ContentJson.navbar.navLinks.map((navLink) => {
-            return (
-              <NavLink
-                key={`navlink-${navLink.href}`}
-                title={navLink.title}
-                href={navLink.href}
-              />
-            );
-          })}
+        <div>
+          <nav className="hidden text-slate-50 lg:flex items-center justify-end space-x-8 z-50">
+            {ContentJson.navbar.navLinks.map((navLink) => {
+              return (
+                <NavLink
+                  key={`navlink-${navLink.href}`}
+                  title={navLink.title}
+                  href={navLink.href}
+                />
+              );
+            })}
 
-          <SocialMediaIcons />
-        </nav>
+            <SocialMediaIcons />
+          </nav>
+
+          <Announcement />
+        </div>
 
         <div role="menu" className="lg:hidden flex mt-2">
           <MobileNavMenu />

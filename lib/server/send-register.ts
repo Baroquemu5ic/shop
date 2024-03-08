@@ -6,17 +6,21 @@ import { pushMailDataToDb } from "@/lib/supabase/db";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export interface sendEmailProps {
-  username: string;
+export interface sendRegisterProps {
+  studentName: string;
+  studentAge: string;
+  course: string;
+  typeOfCourse: string;
   email: string;
-  subject: string;
-  usermessage: string;
+  phone: string;
 }
 
 const ADMIN_EMAIL = process.env.ADMIN_EMAIL || "";
 const EMAIL_SUBJECT_PREFIX = "[Baroque Music Customer Email]:";
 
-export async function sendEmail(payload: sendEmailProps) {
+export async function sendRegister(payload: any) {
+  console.log("sendRegister payload \n", payload);
+
   try {
     if (!ADMIN_EMAIL) {
       return { error: "ADMIN_EMAIL is not configured" };
@@ -34,30 +38,30 @@ export async function sendEmail(payload: sendEmailProps) {
 
     if (resendMailId) {
       console.log(
-        `NextJS-Server: sendEmail: RESEND success: ID: ${resendMailId}`
+        `NextJS-Server: sendRegister: RESEND success: ID: ${resendMailId}`
       );
       // dump the mail details into supabase
 
-      // const dbResult = await pushMailDataToDb({
-      //   resend_id: resendMailId,
-      //   customer_email: payload.email,
-      //   customer_name: payload.username,
-      //   email_subject: payload.subject,
-      //   email_body: payload.usermessage,
-      //   target_email: ADMIN_EMAIL,
-      // });
+      //   const dbResult = await pushMailDataToDb({
+      //     resend_id: resendMailId,
+      //     customer_email: payload.email,
+      //     customer_name: payload.username,
+      //     email_subject: payload.subject,
+      //     email_body: payload.usermessage,
+      //     target_email: ADMIN_EMAIL,
+      //   });
 
-      // if (dbResult?.success === true) {
-      //   console.log(
-      //     `NextJS-Server:sendEmail: SUPABASE success ID: ${resendMailId}`
-      //   );
-      // } else if (dbResult?.error === true) {
-      //   console.log(
-      //     `NextJS-Server:sendEmail: SUPABASE failure ID: ${resendMailId}`
-      //   );
-      // }
+      //   if (dbResult?.success === true) {
+      //     console.log(
+      //       `NextJS-Server:sendRegister: SUPABASE success ID: ${resendMailId}`
+      //     );
+      //   } else if (dbResult?.error === true) {
+      //     console.log(
+      //       `NextJS-Server:sendRegister: SUPABASE failure ID: ${resendMailId}`
+      //     );
+      //   }
     } else {
-      console.log("NextJS-Server:sendEmail: NO resendMailId");
+      console.log("NextJS-Server:sendRegister: NO resendMailId");
     }
 
     return { data };
