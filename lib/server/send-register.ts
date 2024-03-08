@@ -1,6 +1,6 @@
 "use server";
 
-import EmailFromCustomer from "@/components/emails/email-from-customer";
+import RegisterEmail from "@/components/emails/register-email";
 import { Resend } from "resend";
 import { pushMailDataToDb } from "@/lib/supabase/db";
 
@@ -30,8 +30,8 @@ export async function sendRegister(payload: any) {
       from: ADMIN_EMAIL, // admin mailer - this has to be your DOMAIN email (@baroquemusic.in)
       to: ADMIN_EMAIL, // this has to be your DOMAIN email (@baroquemusic.in)
       reply_to: payload.email, // this is needed to reply to the customer on the mail trail
-      subject: `${EMAIL_SUBJECT_PREFIX} ${payload.subject}`,
-      react: EmailFromCustomer(payload),
+      subject: `${EMAIL_SUBJECT_PREFIX}`,
+      react: RegisterEmail(payload),
     });
 
     const resendMailId = data?.id;

@@ -12,42 +12,50 @@ import {
 } from "@react-email/components";
 import * as React from "react";
 
-interface EMailFromCustomerProps {
-  username: string;
+interface RegisterEmailProps {
+  studentName: string;
+  studentAge: string;
+  course: string;
+  typeOfCourse: string;
   email: string;
-  subject: string;
-  usermessage: string;
+  phone: string;
 }
 
-export const EMailFromCustomer = (props: EMailFromCustomerProps) => (
+export const RegisterEmail = (props: RegisterEmailProps) => (
   <Html>
     <Head />
     {/* <Preview>
-      The sales intelligence platform that helps you uncover qualified leads.
-    </Preview> */}
+        The sales intelligence platform that helps you uncover qualified leads.
+      </Preview> */}
     <Body style={main}>
       <Container style={container}>
         {/* logo goes here */}
         {/* <Img
-          src={`${baseUrl}/static/koala-logo.png`}
-          width="170"
-          height="50"
-          alt="Koala"
-          style={logo}
-        /> */}
-        <Text style={paragraph}>Query from Customer: </Text>
+            src={`${baseUrl}/static/koala-logo.png`}
+            width="170"
+            height="50"
+            alt="Koala"
+            style={logo}
+          /> */}
+        <Text style={paragraph}>Registration Request from Customer: </Text>
 
-        <Text style={label}>Name: </Text>
-        <Text>{props.username}</Text>
+        <Text style={label}>Student Name: </Text>
+        <Text>{props.studentName}</Text>
 
-        <Text style={label}>Email:</Text>
+        <Text style={label}>Student Age:</Text>
+        <Text>{props.studentAge}</Text>
+
+        <Text style={label}>Course: </Text>
+        <Text>{props.course}</Text>
+
+        <Text style={label}>Course Type: </Text>
+        <Text style={paragraph}>{props.typeOfCourse}</Text>
+
+        <Text style={label}>Email: </Text>
         <Text>{props.email}</Text>
 
-        <Text style={label}>Subject: </Text>
-        <Text>{props.subject}</Text>
-
-        <Text style={label}>Message: </Text>
-        <Text style={paragraph}>{props.usermessage}</Text>
+        <Text style={label}>Phone: </Text>
+        <Text>{props.phone}</Text>
 
         <Hr style={hr} />
         <Text style={footer}>
@@ -60,7 +68,7 @@ export const EMailFromCustomer = (props: EMailFromCustomerProps) => (
   </Html>
 );
 
-export default EMailFromCustomer;
+export default RegisterEmail;
 
 const main = {
   backgroundColor: "#ffffff",
