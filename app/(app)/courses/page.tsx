@@ -5,8 +5,8 @@ export default function CoursesPage() {
   const courses = ContentJson.courses.list;
 
   return (
-    <div className="flex w-full pt-[200px] lg:pt-[120px]">
-      <div className="flex flex-col items-center py-12 px-8 lg:py-16 lg:px-12 text-slate-100 space-y-12 w-full min-h-screen">
+    <div className="flex w-full max-w-[1440px] mx-auto">
+      <div className="flex flex-col items-center py-12 px-4 lg:py-16 lg:px-12 text-slate-100 space-y-12 w-full min-h-screen">
         <h2 className="text-4xl text-slate-200">
           {ContentJson.courses.pageHeader}
         </h2>
@@ -14,30 +14,46 @@ export default function CoursesPage() {
         <div className="w-full mt-8">
           {courses.map((course, idx) => {
             return (
-              <>
+              <div
+                key={`course-key-${idx}`}
+                className="lg:mb-12 flex flex-col justify-center"
+              >
+                {idx !== 0 ? (
+                  <div className="border-b border-gray-500/40 mt-8 mb-16"></div>
+                ) : null}
                 <div
                   key={course.id}
-                  className="flex flex-col lg:flex-row lg:items-baseline"
+                  className="flex flex-col lg:flex-row lg:justify-center gap-8 lg:gap-0"
                 >
-                  <h2 className="text-xl text-brand-orange flex lg:justify-end  lg:w-[35%]">
-                    {course.title}
-                  </h2>
-                  <div className="flex flex-col lg:flex-grow lg:justify-start lg:w-[65%] lg:pr-[120px]">
+                  <div className="flex flex-col basis-full items-center lg:items-start lg:basis-1/3">
+                    <h2 className="text-xl text-brand-orange mb-4">
+                      {course.title}
+                    </h2>
+
+                    <Image
+                      src={`/images/${course.id}.avif`}
+                      alt="Not Found"
+                      className="object-cover w-full"
+                      width={450}
+                      height={200}
+                      priority
+                    />
+                  </div>
+
+                  <ul className="flex flex-col lg:flex-grow lg:basis-2/3 lg:mt-8">
                     {course.highlights.map((highlight, index) => {
                       return (
-                        <p
+                        <li
                           key={`${course.id}-${index}`}
-                          className="text-lg lg:text-xl my-4 mx-8 lg:mx-12"
+                          className="text-lg lg:text-xl my-2 mx-8 lg:mx-12 list-disc"
                         >
                           {highlight}
-                        </p>
+                        </li>
                       );
                     })}
-                  </div>
+                  </ul>
                 </div>
-
-                <div className="last-of-type:hidden border-t border-gray-800 my-8 lg:mx-[120px]"></div>
-              </>
+              </div>
             );
           })}
         </div>

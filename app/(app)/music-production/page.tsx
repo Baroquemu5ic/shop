@@ -3,7 +3,7 @@ import ContentJson from "@/content.json";
 
 export default function MusicProductionPage() {
   return (
-    <div className="flex w-full pt-[200px] lg:pt-[120px]">
+    <div className="flex w-full max-w-[1440px] mx-auto">
       <div className="flex flex-col items-center py-12 px-8 lg:py-16 lg:px-12 text-slate-100 space-y-12 w-full min-h-screen">
         <h2 className="text-4xl text-slate-200">
           {ContentJson.home.serviceCards[2].title}

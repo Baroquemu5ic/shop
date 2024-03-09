@@ -38,7 +38,7 @@ export default function RootLayout({
       <body className={cn(inter.className)}>
         <Navbar />
 
-        <main className="w-full flex flex-col z-10">
+        <main className="w-full mt-[220px] lg:mt-[180px] flex flex-col z-10">
           {children}
           <Analytics />
         </main>
