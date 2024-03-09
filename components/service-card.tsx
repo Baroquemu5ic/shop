@@ -29,6 +29,7 @@ export function ServiceCard({
             width: "100%",
             height: "auto",
           }}
+          sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
           priority
         />
         <div className="flex flex-col gap-4 mt-4">

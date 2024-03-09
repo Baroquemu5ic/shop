@@ -26,7 +26,8 @@ export async function sendEmail(payload: sendEmailProps) {
 
     const { data } = await resend.emails.send({
       from: ADMIN_EMAIL, // admin mailer - this has to be your DOMAIN email (@baroquemusic.in)
-      to: ADMIN_EMAIL, // this has to be your DOMAIN email (@baroquemusic.in)
+      // this has to be your DOMAIN email (@baroquemusic.in)
+      to: ["opt.subhranshu@gmail.com"],
       reply_to: payload.email, // this is needed to reply to the customer on the mail trail
       subject: `${EMAIL_SUBJECT_PREFIX} ${payload.subject}`,
       react: EmailFromCustomer(payload),
@@ -60,6 +61,7 @@ export async function sendEmail(payload: sendEmailProps) {
       // }
     } else {
       console.log("NextJS-Server:sendEmail: NO resendMailId");
+      return { error: true };
     }
 
     return { data };

@@ -23,8 +23,8 @@ function Hero() {
 
 function HeroHeader() {
   return (
-    <div className="w-5/6 lg:w-3/5 p-4 lg:p-20 backdrop-grayscale-0 bg-slate-700/60 rounded-2xl flex flex-col items-center gap-20 lg:gap-8 text-center">
-      <h1 className="text-3xl md:text-4xl lg:text-6xl text-slate-100">
+    <div className="w-5/6 lg:w-3/5 p-8 lg:p-20 backdrop-grayscale-0 bg-slate-700/60 rounded-2xl flex flex-col items-center gap-20 lg:gap-8 text-center">
+      <h1 className="text-4xl lg:text-6xl text-slate-100">
         {ContentJSON.home.header}
       </h1>
       <p className="text-xl lg:text-2xl font-medium text-slate-200 italic">
@@ -40,7 +40,7 @@ const ServiceCardsData = ContentJSON.home.serviceCards;
 
 function IntroSection() {
   return (
-    <div className="flex flex-col py-12 px-8 lg:py-16 lg:px-12 text-slate-100 gap-8">
+    <div className="flex flex-col max-w-[1440px] mx-auto py-12 px-8 lg:py-16 lg:px-12 text-slate-100 gap-8">
       <h2 className="text-center text-2xl lg:text-4xl font-medium">
         {ContentJSON.home.introductionHeader}
       </h2>

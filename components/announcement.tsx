@@ -10,10 +10,10 @@ export function Announcement() {
   if (pathname === "/register") return null;
 
   return (
-    <section className="z-[999999] rounded-l-2xl flex-shrink-0">
+    <section className="z-[999999] rounded-l-2xl">
       <Link
         href="/register"
-        className="text-lg sm:text-xl lg:text-2xl uppercase text-white animate-pulse ease-in-out hover:animate-none border-brand-orange hover:text-brand-orange border rounded-md py-2 px-4"
+        className="text-lg sm:text-xl lg:text-2xl uppercase flex text-white animate-pulse ease-in-out hover:animate-none border-brand-orange hover:text-brand-orange border rounded-md py-2 px-4"
       >
         Register Now
       </Link>

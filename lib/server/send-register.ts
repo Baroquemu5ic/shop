@@ -33,7 +33,8 @@ export async function sendRegister(payload: any) {
 
     const { data } = await resend.emails.send({
       from: ADMIN_EMAIL, // admin mailer - this has to be your DOMAIN email (@baroquemusic.in)
-      to: ADMIN_EMAIL, // this has to be your DOMAIN email (@baroquemusic.in)
+      // this has to be your DOMAIN email (@baroquemusic.in)
+      to: ["opt.subhranshu@gmail.com", "subhranshu.opt@gmail.com"],
       reply_to: payload.email, // this is needed to reply to the customer on the mail trail
       subject: `${EMAIL_SUBJECT_PREFIX}`,
       react: RegisterEmail(payload),
@@ -67,6 +68,7 @@ export async function sendRegister(payload: any) {
       //   }
     } else {
       console.log("NextJS-Server:sendRegister: NO resendMailId");
+      return { error: true };
     }
 
     return { data };
