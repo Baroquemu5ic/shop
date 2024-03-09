@@ -14,7 +14,9 @@ export interface sendEmailProps {
 }
 
 const ADMIN_EMAIL = process.env.ADMIN_EMAIL || "";
-const EMAIL_SUBJECT_PREFIX = "[Baroque Music Customer Mail]-CONTACT:";
+const EMAIL_SUBJECT_PREFIX = process.env.RUNTIME
+  ? `${process.env.RUNTIME}` + "[Baroque Music Customer Mail]-CONTACT:"
+  : "[Baroque Music Customer Mail]-CONTACT:";
 
 export async function sendEmail(payload: sendEmailProps) {
   try {
