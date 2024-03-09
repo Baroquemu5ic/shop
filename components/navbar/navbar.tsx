@@ -44,8 +44,6 @@ export function Navbar() {
 
             <SocialMediaIcons />
           </nav>
-
-          <Announcement />
         </div>
 
         <div role="menu" className="lg:hidden flex mt-2">
@@ -53,7 +51,10 @@ export function Navbar() {
         </div>
       </div>
 
-      <ContactBanner />
+      <div className="flex flex-col gap-4 lg:gap-0 lg:flex-row justify-between items-center">
+        <ContactBanner />
+        <Announcement />
+      </div>
     </header>
   );
 }
