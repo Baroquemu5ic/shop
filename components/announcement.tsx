@@ -13,7 +13,7 @@ export function Announcement() {
     <section className="z-[999999] rounded-l-2xl flex-shrink-0">
       <Link
         href="/register"
-        className="text-lg sm:text-xl lg:text-2xl uppercase text-brand-orange animate-pulse ease-in-out hover:animate-none hover:underline hover:underline-offset-[8px]"
+        className="text-lg sm:text-xl lg:text-2xl uppercase text-white animate-pulse ease-in-out hover:animate-none border-brand-orange hover:text-brand-orange border rounded-md py-2 px-4"
       >
         Register Now
       </Link>

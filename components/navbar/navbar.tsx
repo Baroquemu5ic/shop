@@ -51,7 +51,7 @@ export function Navbar() {
         </div>
       </div>
 
-      <div className="flex flex-col gap-4 lg:gap-0 lg:flex-row justify-between items-center">
+      <div className="flex flex-col items-end gap-4 lg:flex-row justify-end lg:items-center">
         <ContactBanner />
         <Announcement />
       </div>
