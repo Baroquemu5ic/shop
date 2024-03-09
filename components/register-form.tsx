@@ -192,12 +192,12 @@ function SubmitButton() {
     "mt-12 p-4 bg-blue-600 hover:opacity-65 rounded-lg text-2xl flex justify-center items-center gap-x-2";
   const btn = formStatus.pending ? (
     <button type="submit" className={className} disabled>
-      {ContentJson.contact.form.submit.label2}{" "}
+      Submitting{" "}
       <LoadingIndicator className="animate-spin" width={24} height={24} />
     </button>
   ) : (
     <button type="submit" className={className}>
-      {ContentJson.contact.form.submit.label}
+      Submit
     </button>
   );
 
