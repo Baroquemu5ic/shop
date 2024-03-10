@@ -10,6 +10,9 @@ import { Location } from "../location";
 
 import ContentJson from "@/content.json";
 import { ContactBanner } from "../contact-banner";
+import Image from "next/image";
+import YoutubeIcon from "../icons/youtube";
+import InstagramIcon from "../icons/svg/InstagramIcon.svg";
 
 export function MobileNavMenu() {
   return (
@@ -24,9 +27,14 @@ export function MobileNavMenu() {
             <CloseIcon width={24} height={24} />
           </Drawer.Close>
 
-          <div className="flex flex-col justify-between h-[85vh]">
-            <div className="flex flex-col justify-end gap-8 pr-8">
-              <div className="flex flex-col">
+          <div className="flex flex-col justify-between gap-4">
+            <div className="flex flex-col items-center mt-8 gap-4">
+              <ContactBanner className="justify-center pl-0" />
+              <Location className="text-xs justify-center" />
+            </div>
+
+            <div>
+              <div>
                 {ContentJson.navbar.navLinks.map((navLink) => {
                   return (
                     <MobileNavLink
@@ -38,12 +46,28 @@ export function MobileNavMenu() {
                 })}
               </div>
 
-              <SocialMediaIcons className="" />
-            </div>
-
-            <div className="flex flex-col items-center mt-8 gap-4">
-              <ContactBanner className="justify-center pl-0" />
-              <Location className="text-xs justify-center" />
+              <div className="flex justify-center mt-8 gap-12">
+                <a
+                  href="https://www.youtube.com/@BaroqueMu5ic"
+                  target="_blank"
+                  title="Youtube"
+                  className="px-6 cursor-pointer hover:scale-105 ease-in"
+                >
+                  <YoutubeIcon className="size-[48px]" />
+                </a>
+                <a
+                  href="https://www.instagram.com/baroquemusic.in/"
+                  target="_blank"
+                  title="Instagram"
+                  className="px-6 cursor-pointer hover:scale-105 ease-in"
+                >
+                  <Image
+                    src={InstagramIcon}
+                    alt="Instagram"
+                    className="size-[48px]"
+                  />
+                </a>
+              </div>
             </div>
           </div>
         </Drawer.Content>
@@ -79,7 +103,7 @@ function MobileNavLink({ href, title }: MobileNavLinkProps) {
         }
         // }, 1);
       }}
-      className="pt-2 text-end uppercase text-lg font-light hover:font-medium hover:underline hover:decoration-[#DE7F11] hover:underline-offset-8 ease-in"
+      className="block text-center py-4 uppercase text-lg font-light hover:font-medium hover:underline hover:decoration-[#DE7F11] hover:underline-offset-8 ease-in"
     >
       {title}
     </Link>

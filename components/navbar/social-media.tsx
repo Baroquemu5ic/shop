@@ -11,7 +11,7 @@ export default function SocialMediaIcons(props: SocialMediaIconsProps) {
   return (
     <div
       className={cn(
-        "flex flex-col lg:flex-row items-end pt-2  lg:p-0 lg:justify-between lg:items-center gap-4",
+        "flex flex-col lg:flex-row items-end pt-2  lg:p-0 lg:justify-between lg:items-center gap-8 lg:gap-4",
         props.className
       )}
     >

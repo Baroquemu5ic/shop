@@ -3,7 +3,7 @@ import ContentJSON from "@/content.json";
 
 export default function Home() {
   return (
-    <div className="flex w-full mt-[-120px]">
+    <div className="flex w-full mt-[0px]">
       <Hero />
     </div>
   );
