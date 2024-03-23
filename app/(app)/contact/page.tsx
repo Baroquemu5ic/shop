@@ -1,6 +1,6 @@
 import { ContactForm } from "@/components/contact-form";
-import Image from "next/image";
 import ContactJson from "@/content.json";
+import { GoogleMapsEmbed } from "@/components/google-maps-embed";
 
 export default function ContactUsPage() {
   return (
@@ -10,14 +10,9 @@ export default function ContactUsPage() {
           {ContactJson.contact.pageHeader}
         </h2>
 
-        <Image
-          src="/images/contact.avif"
-          alt="Contact Us"
-          className=""
-          width={450}
-          height={200}
-          priority
-        />
+        <div className="w-full lg:w-3/5 min-h-[300px] lg:min-h-[400px] mt-4 mb-12">
+          <GoogleMapsEmbed />
+        </div>
 
         <ContactForm />
       </div>

@@ -1,4 +1,5 @@
 import { ServiceCard } from "@/components/service-card";
+import { GoogleMapsEmbed } from "@/components/google-maps-embed";
 import ContentJSON from "@/content.json";
 
 export default function Home() {
@@ -14,6 +15,15 @@ function Hero() {
     <div className="flex flex-col w-full ">
       <div className="flex flex-row w-full max-[375px]:min-h-[calc(100dvh-20px)]  min-h-[calc(100dvh-100px)] lg:min-h-screen bg-[url('../public/images/mainbkg.avif')] bg-center bg-cover items-center justify-center">
         <HeroHeader />
+      </div>
+
+      <div className="flex flex-col items-center gap-8 mt-16">
+        <h2 className="text-center text-slate-100 text-2xl lg:text-4xl font-medium">
+          Visit Us At
+        </h2>
+        <div className="w-4/5 min-h-[300px] lg:min-h-[400px]">
+          <GoogleMapsEmbed />
+        </div>
       </div>
 
       <IntroSection />

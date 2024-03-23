@@ -11,6 +11,7 @@ import {
   Text,
 } from "@react-email/components";
 import * as React from "react";
+import ContentJson from "@/content.json";
 
 interface EMailFromCustomerProps {
   username: string;
@@ -51,9 +52,8 @@ export const EMailFromCustomer = (props: EMailFromCustomerProps) => (
 
         <Hr style={hr} />
         <Text style={footer}>
-          Baroque Academy of Performing Arts & Production Address: 13th Cross,
-          Horamavu Agara, Bangalore – 560043 Babausapalya Above Green Naturo
-          Grocery
+          {ContentJson.footer.address[0]}
+          {ContentJson.footer.address[1]}
         </Text>
       </Container>
     </Body>

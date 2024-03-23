@@ -1,6 +1,6 @@
-import Image from "next/image";
 import ContactJson from "@/content.json";
 import { RegisterForm } from "@/components/register-form";
+import { GoogleMapsEmbed } from "@/components/google-maps-embed";
 
 export default function RegisterPage() {
   return (
@@ -10,14 +10,9 @@ export default function RegisterPage() {
           {ContactJson.register.pageHeader}
         </h2>
 
-        <Image
-          src="/images/register.avif"
-          alt="Register Now"
-          className=""
-          width={450}
-          height={200}
-          priority
-        />
+        <div className="w-full lg:w-3/5 min-h-[300px] lg:min-h-[400px] mt-4 mb-12">
+          <GoogleMapsEmbed />
+        </div>
 
         <RegisterForm />
       </div>
