@@ -38,24 +38,32 @@ export const RegisterEmail = (props: RegisterEmailProps) => (
             alt="Koala"
             style={logo}
           /> */}
-        <Text style={paragraph}>Registration Request from Customer: </Text>
+        <Text style={paragraph}>
+          {ContentJson.emailTemplates.register.pageHeader}
+        </Text>
 
-        <Text style={label}>Student Name: </Text>
+        <Text style={label}>
+          {ContentJson.emailTemplates.register.studentName}
+        </Text>
         <Text>{props.studentName}</Text>
 
-        <Text style={label}>Student Age:</Text>
+        <Text style={label}>
+          {ContentJson.emailTemplates.register.studentAge}
+        </Text>
         <Text>{props.studentAge}</Text>
 
-        <Text style={label}>Course: </Text>
+        <Text style={label}>{ContentJson.emailTemplates.register.course}</Text>
         <Text>{props.course}</Text>
 
-        <Text style={label}>Course Type: </Text>
+        <Text style={label}>
+          {ContentJson.emailTemplates.register.typeOfCourse}
+        </Text>
         <Text style={paragraph}>{props.typeOfCourse}</Text>
 
-        <Text style={label}>Email: </Text>
+        <Text style={label}>{ContentJson.emailTemplates.register.email}</Text>
         <Text>{props.email}</Text>
 
-        <Text style={label}>Phone: </Text>
+        <Text style={label}>{ContentJson.emailTemplates.register.phone}</Text>
         <Text>{props.phone}</Text>
 
         <Hr style={hr} />

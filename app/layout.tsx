@@ -1,26 +1,24 @@
+import "./globals.css";
+
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
-import "./globals.css";
+
 import { cn } from "../lib/utils";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { Toaster } from "sonner";
 
+import ContentJSON from "@/content.json";
+
+const { seo } = ContentJSON;
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title:
-    "Baroque Academy of Performing Arts & Production | Babusapalya, Kalyan Nagar, Banagalore",
-  description:
-    "Baroque Academy of Performing Arts & Production in Babusapalya, Kalyan Nagar, Banagalore ",
-  keywords: [
-    "music lessons bangalore",
-    "music production",
-    "kids lessons bangalore",
-    "music instruments bangalore",
-    "performing arts bangalore",
-  ],
+  title: seo.title,
+  description: seo.description,
+  keywords: seo.keywords,
 };
 
 export const viewport: Viewport = {

@@ -1,9 +1,13 @@
 import WhatsAppIcon from "./icons/whatsapp";
+import ContentJson from "@/content.json";
 
 export function WhatsAppLink() {
+  const { whatsAppNumber } = ContentJson.contactDetails;
+  const href = `https://wa.me/${whatsAppNumber}`;
+
   return (
     <a
-      href="https://wa.me/918884648080"
+      href={href}
       target="_blank"
       rel="noopener noreferrer"
       className="cursor-pointer"

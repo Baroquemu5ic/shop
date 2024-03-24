@@ -22,12 +22,8 @@ export default function VocalPage() {
           {ContentJson.home.serviceCards[1].description}
         </p>
 
-        <p className="text-xl my-4 mx-8 lg:mx-12">
-          {ContentJson.home.serviceCards[1].description}
-        </p>
-
         <h2 className="text-xl uppercase underline underline-offset-8 decoration-brand-orange">
-          Courses in Vocal
+          {ContentJson.courses.list[1].subtitle}
         </h2>
 
         <div className="mt-[60px] flex flex-col">

@@ -23,7 +23,7 @@ export default function MusicInstrumentPage() {
         </p>
 
         <h2 className="text-xl uppercase underline underline-offset-8 decoration-brand-orange">
-          Courses in Music Instruments
+          {ContentJson.courses.list[0].subtitle}
         </h2>
 
         <div className="mt-[60px] flex flex-col">

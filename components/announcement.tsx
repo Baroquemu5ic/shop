@@ -3,6 +3,7 @@
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import React from "react";
+import ContentJson from "@/content.json";
 
 export function Announcement() {
   const pathname = usePathname();
@@ -15,7 +16,7 @@ export function Announcement() {
         href="/register"
         className="text-lg sm:text-xl lg:text-2xl uppercase flex text-white animate-pulse ease-in-out hover:animate-none border-brand-orange hover:text-brand-orange border rounded-md py-2 px-4"
       >
-        Register Now
+        {ContentJson.register.pageHeader}
       </Link>
     </section>
   );

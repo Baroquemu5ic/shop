@@ -3,10 +3,6 @@
 import { sendEmail, sendEmailProps } from "@/lib/server/send-email";
 import { sendRegister, sendRegisterProps } from "@/lib/server/send-register";
 
-async function mockPromise(any: any) {
-  return Promise.resolve({ error: false });
-}
-
 export async function submitEmailAction(prevState: any, formData: FormData) {
   const formObj = {
     username: formData.get("username"),

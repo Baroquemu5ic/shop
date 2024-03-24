@@ -36,18 +36,22 @@ export const EMailFromCustomer = (props: EMailFromCustomerProps) => (
           alt="Koala"
           style={logo}
         /> */}
-        <Text style={paragraph}>Query from Customer: </Text>
+        <Text style={paragraph}>
+          {ContentJson.emailTemplates.contact.pageHeader}
+        </Text>
 
-        <Text style={label}>Name: </Text>
+        <Text style={label}>{ContentJson.emailTemplates.contact.username}</Text>
         <Text>{props.username}</Text>
 
-        <Text style={label}>Email:</Text>
+        <Text style={label}>{ContentJson.emailTemplates.contact.email}</Text>
         <Text>{props.email}</Text>
 
-        <Text style={label}>Subject: </Text>
+        <Text style={label}>{ContentJson.emailTemplates.contact.subject}</Text>
         <Text>{props.subject}</Text>
 
-        <Text style={label}>Message: </Text>
+        <Text style={label}>
+          {ContentJson.emailTemplates.contact.usermessage}
+        </Text>
         <Text style={paragraph}>{props.usermessage}</Text>
 
         <Hr style={hr} />

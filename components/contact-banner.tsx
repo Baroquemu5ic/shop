@@ -1,6 +1,7 @@
 import { cn } from "@/lib/utils";
 import { PhoneLink } from "./phone-link";
 import { WhatsAppLink } from "./whatsapp-link";
+import ContentJson from "@/content.json";
 
 interface ContactBannerProps {
   className?: string;
@@ -16,7 +17,7 @@ export function ContactBanner(props: ContactBannerProps) {
     >
       <PhoneLink />
       <WhatsAppLink />
-      <span>+91 888 464 8080</span>
+      <span>{ContentJson.contactDetails.phoneDisplay}</span>
     </p>
   );
 }

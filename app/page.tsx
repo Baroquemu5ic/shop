@@ -19,7 +19,7 @@ function Hero() {
 
       <div className="flex flex-col items-center gap-8 mt-16">
         <h2 className="text-center text-slate-100 text-2xl lg:text-4xl font-medium">
-          Visit Us At
+          {ContentJSON.home.addressHeader}
         </h2>
         <div className="w-4/5 min-h-[300px] lg:min-h-[400px]">
           <GoogleMapsEmbed />

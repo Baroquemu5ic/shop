@@ -20,8 +20,10 @@ export default function AboutPage() {
           );
         })}
 
-        <div className="flex flex-col space-y-4 mx-8 lg:mx-12 w-4/5 md:w-3/5 h-[300px] md:h-[500px]">
-          <h3 className="text-lg text-center">Visit Us!</h3>
+        <div className="flex flex-col space-y-6 mx-8 pt-12 lg:mx-12 w-4/5 md:w-3/5 h-[500px]">
+          <h3 className="text-3xl text-slate-200 text-center">
+            {ContentJson.about.addressHeader}
+          </h3>
           <GoogleMapsEmbed />
         </div>
       </div>

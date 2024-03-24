@@ -48,7 +48,7 @@ export function MobileNavMenu() {
 
               <div className="flex justify-center mt-8 gap-12">
                 <a
-                  href="https://www.youtube.com/@BaroqueMu5ic"
+                  href={ContentJson.navbar.socialLinks.youtube}
                   target="_blank"
                   title="Youtube"
                   className="px-6 cursor-pointer hover:scale-105 ease-in"
@@ -56,7 +56,7 @@ export function MobileNavMenu() {
                   <YoutubeIcon className="size-[48px]" />
                 </a>
                 <a
-                  href="https://www.instagram.com/baroquemusic.in/"
+                  href={ContentJson.navbar.socialLinks.instagram}
                   target="_blank"
                   title="Instagram"
                   className="px-6 cursor-pointer hover:scale-105 ease-in"
@@ -78,7 +78,7 @@ export function MobileNavMenu() {
 
 function HamburgerMenuIcon() {
   return (
-    <div className="space-y-2 opacity-85 cursor-pointer hover:opacity-100">
+    <div className="space-y-2 opacity-85 cursor-pointer hover:opacity-100 p-4">
       <div className="w-8 h-[2px] bg-slate-200"></div>
       <div className="w-8 h-[2px] bg-slate-200"></div>
       <div className="w-8 h-[2px] bg-slate-200"></div>

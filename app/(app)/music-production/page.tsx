@@ -23,7 +23,7 @@ export default function MusicProductionPage() {
         </p>
 
         <h2 className="text-xl uppercase underline underline-offset-8 decoration-brand-orange">
-          Courses in Music Production
+          {ContentJson.courses.list[2].subtitle}
         </h2>
 
         <div className="mt-[60px] flex flex-col">

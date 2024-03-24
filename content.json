@@ -1,4 +1,34 @@
 {
+  "seo": {
+    "title": "Baroque Academy of Performing Arts & Production | Courses in Music Instruments, Vocals & Music Production | Babusapalya, Kalyan Nagar, Bangalore",
+    "description": "Baroque Academy offers diverse courses in instrument training, vocal coaching, and music production. Master traditional instruments, refine vocal technique, and innovate with technology. Seamlessly blend tradition with modernity for success in the music industry.",
+    "keywords": [
+      "Music Lessons Bangalore",
+      "Vocals Lessons Bangalore",
+      "Music Production Bangalore",
+      "Music Instruments course",
+      "Guitar Courses",
+      "Keyboard Courses",
+      "Drums programming",
+      "Music theory lessons",
+      "Vocals technique training",
+      "Vocals Pitch and Ear training",
+      "Music Stage Performance",
+      "Music Collaborations",
+      "Music Production",
+      "Digital Audio Workshops",
+      "Music Recording techniques",
+      "Music production software",
+      "Music Mixing and Mastering",
+      "Music production software"
+    ]
+  },
+  "contactDetails": {
+    "phoneDisplay": "+91 888 464 8080",
+    "whatsAppNumber": "918884648080",
+    "phone": "+918884648080",
+    "googleMapsLink": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15548.247207276358!2d77.653068!3d13.0317364!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ee9479869646a35%3A0x2755c832d2a04ed9!2sBaroque%20Music%20Academy!5e0!3m2!1sen!2sin!4v1711210101721!5m2!1sen!2sin"
+  },
   "navbar": {
     "logoHeader": "Baroque Academy of Performing Arts & Production",
     "navLinks": [
@@ -14,15 +44,18 @@
         "title": "About",
         "href": "/about"
       }
-    ]
+    ],
+    "socialLinks": {
+      "youtube": "https://www.youtube.com/@BaroqueMu5ic",
+      "instagram": "https://www.instagram.com/baroquemusic.in/"
+    }
   },
   "footer": {
     "address": [
       "Address: 1st Floor Arya's Complex 13th Cross Prakruthi Township, Horamavu Agara, Bangalore – 560043",
       "Above 'Green Naturo Supermarket'"
     ],
-    "addressGoogleMapsLink": "https://maps.app.goo.gl/v9Ki5Z1JupdhAkrz7",
-    "footerLinks": []
+    "addressGoogleMapsLink": "https://maps.app.goo.gl/v9Ki5Z1JupdhAkrz7"
   },
   "home": {
     "header": "Baroque Academy of Performing Arts & Production",
@@ -30,6 +63,7 @@
       "Harmonizing Tradition and Technology:",
       "Redefining Music Education"
     ],
+    "addressHeader": "Visit Us At",
     "introductionHeader": "Our Vision",
     "introductionText": [
       "At Baroque Music, we redefine music education with our comprehensive training program.",
@@ -57,55 +91,14 @@
       }
     ]
   },
-  "contact": {
-    "pageHeader": "Contact Us",
-    "form": {
-      "username": {
-        "label": "Name"
-      },
-      "email": {
-        "label": "Email"
-      },
-      "subject": {
-        "label": "Subject"
-      },
-      "usermessage": {
-        "label": "Message"
-      },
-      "submit": {
-        "label": "Submit Message",
-        "label2": "Submitting"
-      }
-    }
-  },
-  "register": {
-    "pageHeader": "Register Now",
-    "form": {
-      "username": {
-        "label": "Name"
-      },
-      "email": {
-        "label": "Email"
-      },
-      "subject": {
-        "label": "Subject"
-      },
-      "usermessage": {
-        "label": "Message"
-      },
-      "submit": {
-        "label": "Submit Message",
-        "label2": "Submitting"
-      }
-    }
-  },
   "about": {
     "pageHeader": "About Us",
     "introductionText": [
       "At Baroque Music, we redefine music education with our comprehensive training program.",
       "Alongside mastering instruments like Keyboard, Guitar, Drums, and Vocal, we provide vital instruction in Digital Audio Workstations (DAWs) such as Ableton Live and essential plugins.",
       "Our approach ensures that aspiring musicians not only excel in traditional instrument proficiency and vocal technique but also become adept in leveraging technology to create, produce, and innovate. By seamlessly integrating traditional musical training with modern production techniques, we empower our students to become versatile and complete musicians ready to succeed in today's dynamic music industry landscape."
-    ]
+    ],
+    "addressHeader": "Visit Us At"
   },
   "courses": {
     "pageHeader": "Courses",
@@ -113,6 +106,7 @@
       {
         "id": "music-instrument",
         "title": "Music Instrument",
+        "subtitle": "Courses in Music Instruments",
         "highlights": [
           "Foundation in Music Theory",
           "Guitar: Chords, Scales, Techniques, Fingerpicking, Strumming Patterns, Lead Guitar Concepts, learn Hindi and English songs.",
@@ -125,6 +119,7 @@
       {
         "id": "vocal",
         "title": "Vocal",
+        "subtitle": "Courses in Vocal",
         "highlights": [
           "Vocal Technique and Music Theory",
           "Breathing and Voice Control Exercises",
@@ -137,6 +132,7 @@
       {
         "id": "music-production",
         "title": "Music Production",
+        "subtitle": "Courses in Music Production",
         "highlights": [
           "Music Theory and Sound Fundamentals",
           "Digital Audio Workstations (DAW) Training",
@@ -147,5 +143,113 @@
         ]
       }
     ]
+  },
+  "contact": {
+    "pageHeader": "Contact Us",
+    "form": {
+      "username": {
+        "label": "Name",
+        "name": "username"
+      },
+      "email": {
+        "label": "Email",
+        "name": "email"
+      },
+      "subject": {
+        "label": "Subject",
+        "name": "subject"
+      },
+      "usermessage": {
+        "label": "Message",
+        "name": "usermessage"
+      },
+      "submit": {
+        "label": "Submit Message",
+        "label2": "Submitting"
+      }
+    }
+  },
+  "register": {
+    "pageHeader": "Register Now",
+    "form": {
+      "studentName": {
+        "label": "Student's Name",
+        "name": "studentName"
+      },
+      "studentAge": {
+        "label": "Age",
+        "name": "studentAge"
+      },
+      "course": {
+        "label": "Select Course",
+        "name": "course",
+        "options": [
+          {
+            "label": "Guitar",
+            "id": "guitar"
+          },
+          {
+            "label": "Keyboard",
+            "id": "keyboard"
+          },
+          {
+            "label": "Vocal",
+            "id": "vocal"
+          },
+          {
+            "label": "Music Production",
+            "id": "music_production"
+          },
+          {
+            "label": "Mix and Master",
+            "id": "mix_and_master"
+          }
+        ]
+      },
+      "typeOfCourse": {
+        "label": "Type of Course",
+        "name": "typeOfCourse",
+        "options": [
+          {
+            "label": "Online",
+            "id": "online"
+          },
+          {
+            "label": "Offline",
+            "id": "offline"
+          }
+        ]
+      },
+      "email": {
+        "label": "Email",
+        "name": "email"
+      },
+      "phone": {
+        "label": "Phone Number",
+        "name": "phone"
+      },
+      "submit": {
+        "label": "Submit",
+        "label2": "Submitting"
+      }
+    }
+  },
+  "emailTemplates": {
+    "contact": {
+      "pageHeader": "Query from Customer: ",
+      "username": "Name: ",
+      "email": "Email: ",
+      "subject": "Subject: ",
+      "usermessage": "Message: "
+    },
+    "register": {
+      "pageHeader": "Registration Request from Customer: ",
+      "studentName": "Student Name: ",
+      "studentAge": "Student Age: ",
+      "course": "Course: ",
+      "typeOfCourse": "Course Type: ",
+      "email": "Email: ",
+      "phone": "Phone: "
+    }
   }
 }
