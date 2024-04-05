@@ -33,14 +33,16 @@ export function ServiceCard({
           priority
         />
         <div className="flex flex-col gap-4 mt-4">
-          <h3 className="text-lg font-bold text-slate-700">{title}</h3>
+          <h3 className="text-xl font-bold text-slate-700 text-center">
+            {title}
+          </h3>
           <p className="text-slate-800 text-sm">{description}</p>
         </div>
       </div>
 
       <Link
         href={href}
-        className="mt-8 rounded-md px-4 py-2 bg-blue-600 text-center hover:opacity-85 flex-shrink-0"
+        className="mt-8 rounded-md px-4 py-2 bg-blue-600 text-xl text-center hover:opacity-85 flex-shrink-0"
       >
         Learn More
       </Link>

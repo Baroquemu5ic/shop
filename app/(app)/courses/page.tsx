@@ -1,5 +1,17 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import ContentJson from "@/content.json";
+
+const { seo } = ContentJson;
+
+const pageTitle =
+  "Courses | Baroque Academy of Performing Arts & Production  | Babusapalya, Kalyan Nagar, Bangalore";
+
+export const metadata: Metadata = {
+  title: pageTitle,
+  description: seo.description,
+  keywords: seo.keywords,
+};
 
 export default function CoursesPage() {
   const courses = ContentJson.courses.list;

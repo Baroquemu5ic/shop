@@ -1,5 +1,17 @@
+import type { Metadata } from "next";
 import { GoogleMapsEmbed } from "@/components/google-maps-embed";
 import ContentJson from "@/content.json";
+
+const { seo } = ContentJson;
+
+const pageTitle =
+  "About Us | Baroque Academy of Performing Arts & Production | Babusapalya, Kalyan Nagar, Bangalore";
+
+export const metadata: Metadata = {
+  title: pageTitle,
+  description: seo.description,
+  keywords: seo.keywords,
+};
 
 export default function AboutPage() {
   return (
