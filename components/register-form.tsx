@@ -2,6 +2,7 @@
 
 import React from "react";
 import { useFormState, useFormStatus } from "react-dom";
+import { usePathname, useRouter } from "next/navigation";
 import { toast } from "sonner";
 import LoadingIndicator from "./icons/loading";
 import { submitRegisterAction } from "../app/actions";
@@ -15,6 +16,8 @@ const initialState = {
 };
 
 export function RegisterForm() {
+  const router = useRouter();
+  const pathname = usePathname();
   const [formState, formAction] = useFormState(
     submitRegisterAction,
     initialState
@@ -25,9 +28,10 @@ export function RegisterForm() {
       toast.error(formState.message);
     }
     if (formState.success === true) {
-      toast.success(formState.message);
+      const q = formState.message ? `?id=${formState.message}` : "";
+      router.push(`${pathname}/success${q}`);
     }
-  }, [formState]);
+  }, [formState, pathname, router]);
 
   return (
     <form

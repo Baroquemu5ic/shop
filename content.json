@@ -234,6 +234,10 @@
       }
     }
   },
+  "registerSuccess": {
+    "pageHeader": "Registration Successful!",
+    "description": "Thank you for Registering with us, we will reach out to you shortly!"
+  },
   "emailTemplates": {
     "contact": {
       "pageHeader": "Query from Customer: ",

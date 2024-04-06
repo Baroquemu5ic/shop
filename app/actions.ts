@@ -1,7 +1,8 @@
 "use server";
-
+import { cookies } from "next/headers";
 import { sendEmail, sendEmailProps } from "@/lib/server/send-email";
 import { sendRegister, sendRegisterProps } from "@/lib/server/send-register";
+import { REGISTER_SUCCESS_PAGE_COOKIE } from "@/lib/constants";
 
 export async function submitEmailAction(prevState: any, formData: FormData) {
   const formObj = {
@@ -48,9 +49,22 @@ export async function submitRegisterAction(prevState: any, formData: FormData) {
     };
   }
 
+  // setup cookies
+  const cookieObject = {
+    name: REGISTER_SUCCESS_PAGE_COOKIE,
+    value: `${formObj?.phone}_${Date.now()}`,
+  };
+
+  cookies().set({
+    ...cookieObject,
+    httpOnly: true,
+    path: "/register",
+    maxAge: 60,
+  });
+
   return {
     success: true,
     error: false,
-    message: "Success!",
+    message: cookieObject?.value,
   };
 }
