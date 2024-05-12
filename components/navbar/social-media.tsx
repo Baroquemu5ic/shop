@@ -20,7 +20,7 @@ export default function SocialMediaIcons(props: SocialMediaIconsProps) {
         href={ContentJson.navbar.socialLinks.youtube}
         target="_blank"
         title="Youtube"
-        className="size-10 cursor-pointer flex items-center justify-center hover:scale-105 ease-in"
+        className="size-8 cursor-pointer flex items-center justify-center hover:scale-105 ease-in"
       >
         <YoutubeIcon className="w-fit h-fit" />
       </a>
@@ -28,7 +28,7 @@ export default function SocialMediaIcons(props: SocialMediaIconsProps) {
         href={ContentJson.navbar.socialLinks.instagram}
         target="_blank"
         title="Instagram"
-        className="size-10 cursor-pointer flex items-center justify-center hover:scale-105 ease-in"
+        className="size-8 cursor-pointer flex items-center justify-center hover:scale-105 ease-in"
       >
         <Image src={InstagramIcon} alt="Instagram" className="w-fit h-fit" />
       </a>

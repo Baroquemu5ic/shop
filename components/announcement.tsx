@@ -14,7 +14,7 @@ export function Announcement() {
     <section className="z-[999999] rounded-l-2xl">
       <Link
         href="/register"
-        className="text-lg sm:text-xl lg:text-2xl uppercase flex text-white animate-pulse ease-in-out hover:animate-none border-brand-orange hover:text-brand-orange border rounded-md py-2 px-4"
+        className="text-base lg:text-lg w-fit uppercase flex text-white animate-pulse ease-in-out hover:animate-none border-brand-orange hover:text-brand-orange border rounded-md py-2 px-4"
       >
         {ContentJson.register.pageHeader}
       </Link>

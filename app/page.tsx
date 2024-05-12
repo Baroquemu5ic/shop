@@ -74,6 +74,7 @@ function IntroSection() {
             title={service.title}
             href={service.href}
             description={service.description}
+            fees={service.fees}
           />
         ))}
       </div>

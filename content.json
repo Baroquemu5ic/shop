@@ -72,19 +72,22 @@
     ],
     "serviceCards": [
       {
-        "title": "Music Instrument", "Fees: 2500"
+        "title": "Music Instrument",
+        "fees": 2500,
         "href": "/music-instrument",
         "description": "At Baroque, we believe in the power of mastering traditional musical instruments as the foundation of musical excellence. Our comprehensive training in instruments such as Keyboard, Guitar, and Drums goes beyond just learning to play notes – it's about understanding the nuances of tone, rhythm, and expression. With expert guidance from seasoned musicians, students immerse themselves in the rich heritage of instrumental music, honing their skills to become proficient performers capable of captivating audiences with their artistry.",
         "imgUrl": "/images/music-instrument.avif"
       },
       {
-        "title": "Vocal", "Fees: 2500"
+        "title": "Vocal",
+        "fees": 2500,
         "href": "/vocal",
         "description": "Vocal expression is at the heart of musical communication, and at Baroque, we are dedicated to nurturing the voices of aspiring singers. Our vocal training program focuses on developing not only technical proficiency but also emotional depth and interpretative skills. Through personalized coaching and a supportive environment, students explore the full range of their vocal capabilities, from mastering proper breathing techniques to conveying authentic emotion through song. Whether aspiring to be soloists or harmonizing in ensembles, our students emerge as confident and versatile vocalists ready to command the stage.",
         "imgUrl": "/images/vocal.avif"
       },
       {
-        "title": "Music Production", "Fees: 20000"
+        "title": "Music Production",
+        "fees": 20000,
         "href": "/music-production",
         "description": "In today's digital age, proficiency in music production is essential for aspiring musicians, and at Baroque, we ensure our students are equipped with the necessary skills to thrive in the modern music industry. Our music production training program introduces students to the world of Digital Audio Workstations (DAWs) such as Ableton Live and essential plugins, empowering them to unleash their creativity in the studio. From composing and arranging to recording and mixing, students learn the intricacies of music production under the guidance of industry professionals. Our goal is to not only teach the technical aspects of production but also to instill a creative mindset that encourages innovation and experimentation, preparing our students to make their mark in the ever-evolving world of music production.",
         "imgUrl": "/images/music-production.avif"

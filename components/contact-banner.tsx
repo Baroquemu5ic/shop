@@ -11,7 +11,7 @@ export function ContactBanner(props: ContactBannerProps) {
   return (
     <p
       className={cn(
-        "flex pl-[35px] lg:pl-[40px] gap-2 items-center text-xl font-light text-white group",
+        "flex gap-2 items-center text-xl font-light text-white group",
         props.className
       )}
     >
