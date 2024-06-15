@@ -73,14 +73,14 @@
     "serviceCards": [
       {
         "title": "Music Instrument",
-        "fees": 2500,
+        "fees": 3000,
         "href": "/music-instrument",
         "description": "At Baroque, we believe in the power of mastering traditional musical instruments as the foundation of musical excellence. Our comprehensive training in instruments such as Keyboard, Guitar, and Drums goes beyond just learning to play notes – it's about understanding the nuances of tone, rhythm, and expression. With expert guidance from seasoned musicians, students immerse themselves in the rich heritage of instrumental music, honing their skills to become proficient performers capable of captivating audiences with their artistry.",
         "imgUrl": "/images/music-instrument.avif"
       },
       {
         "title": "Vocal",
-        "fees": 2500,
+        "fees": 3000,
         "href": "/vocal",
         "description": "Vocal expression is at the heart of musical communication, and at Baroque, we are dedicated to nurturing the voices of aspiring singers. Our vocal training program focuses on developing not only technical proficiency but also emotional depth and interpretative skills. Through personalized coaching and a supportive environment, students explore the full range of their vocal capabilities, from mastering proper breathing techniques to conveying authentic emotion through song. Whether aspiring to be soloists or harmonizing in ensembles, our students emerge as confident and versatile vocalists ready to command the stage.",
         "imgUrl": "/images/vocal.avif"
