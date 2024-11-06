@@ -207,9 +207,11 @@
             "label": "Mix and Master",
             "id": "mix_and_master"
           },
-            "label": "Drums",
-            "id": "Drums"
           {
+            "label": "Drums",
+            "id": "drums"
+          }
+        ]
       },
       "typeOfCourse": {
         "label": "Type of Course",
@@ -237,7 +239,7 @@
         "label": "Submit",
         "label2": "Submitting"
       }
-    
+    }
   },
   "registerSuccess": {
     "pageHeader": "Registration Successful!",
