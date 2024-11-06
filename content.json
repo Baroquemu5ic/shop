@@ -207,7 +207,9 @@
             "label": "Mix and Master",
             "id": "mix_and_master"
           }
-        ]
+           "label": "Drums",
+            "id": "Drums"
+        {
       },
       "typeOfCourse": {
         "label": "Type of Course",
